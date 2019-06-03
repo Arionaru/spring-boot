@@ -24,4 +24,9 @@ public class CityController {
 		
 		return cityRepo.findCityLike(name);
 	}
+	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	String home() {
+		return "Hellooooo World!";
+	}
 }
